@@ -20,7 +20,7 @@ typedef struct fxor_opts {
 #define		DECIMAL_FMT	2
 #define		ASCII_FMT	3
 #define		UTF_8_FMT	4
-#define		UTF_64_FMT	5
+#define		UTF_16_FMT	5
 
 
 //Error handling types
@@ -69,7 +69,7 @@ typedef struct fxor_error {
 #define		DECIMAL_FMT_OPT		"-dec"
 #define		ASCII_FMT_OPT		"-string"
 #define		UTF_8_FMT_OPT		"-utf8"
-#define		UTF_16_FMT_OPT		"-utf64"
+#define		UTF_16_FMT_OPT		"-utf16"
 
 typedef struct fxor_key {
 	char	*	key;
