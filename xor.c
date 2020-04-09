@@ -24,7 +24,7 @@ void run_xor(fxor_opts * data, fxor_error * err) {
 			err->code = build_dec_key(data->key, &key);
 			break;
 		case UTF_8_FMT: //to be implemented
-		case UTF_64_FMT:
+		case UTF_16_FMT:
 		case ASCII_FMT:
 			err->code = build_ascii_key(data->key, &key);
 			break;

@@ -82,7 +82,7 @@ void parse_opts(const int argc, char ** argv, fxor_opts *opts, fxor_error *err) 
 				opts->key_format = ASCII_FMT;
 			} else if ( strcmp(argv[arg], UTF_8_FMT_OPT) == 0 ) {
 				opts->key_format = ASCII_FMT;
-			} else if ( strcmp(argv[arg], UTF_64_FMT_OPT) == 0 ) {
+			} else if ( strcmp(argv[arg], UTF_16_FMT_OPT) == 0 ) {
 				opts->key_format = ASCII_FMT;
 			}
 			
