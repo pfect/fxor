@@ -46,14 +46,16 @@ void run_xor(fxor_opts * data, fxor_error * err) {
 		if ( fread_status != 0 ) {
 			err->code = UNEVEN_FILE_LEN;
 		}	
+	        
+                free(in_buffer);
+	        free(out_buffer);
 	} else {
 		err->data = (char*)malloc(sizeof(char) * (strlen(data->key)+1));
 		strcpy(err->data, data->key);
 	}
 
-	free(in_buffer);
-	free(out_buffer);
 	free(key.key);
+
 }
 
 unsigned char build_hex_key(char * in_key, fxor_key * ret_key) {
